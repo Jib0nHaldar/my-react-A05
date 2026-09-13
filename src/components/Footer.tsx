@@ -1,10 +1,12 @@
 const Footer = () => {
     return (
+        <section>
         <footer className='p-10 bg-white text-gray-900'>
+            
             <div className='flex flex-col md:flex-row md:justify-between gap-10'>
                 <div className='max-w-xs'>
                     <div className='flex items-center gap-2'>
-                        <span className='flex items-center justify-center w-8 h-8 rounded-md bg-gradient-to-br from-purple-600 to-pink-500 text-white text-sm font-bold'>DS</span>
+                        <span className='flex items-center justify-center w-8 h-8 rounded-md bg-linear-to-br from-purple-600 to-pink-500 text-white text-sm font-bold'>DS</span>
                         <span className='font-semibold'>Dev <span className='text-pink-600'>Stack</span></span>
                     </div>
                     <p className='mt-4 text-sm text-gray-500'>
@@ -52,6 +54,7 @@ const Footer = () => {
                 </div>
             </div>
         </footer>
+        </section>
     );
 };
 

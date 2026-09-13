@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+.text-gradient {
+	background-image: linear-gradient(to right, #ff5722, #d81b7e, #7c3aed);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+section {
+	margin: 0 60px 60px;
+}
+
+@media (max-width: 768px) {
+	section {
+		margin: 0 24px 64px;
+	}
+}
