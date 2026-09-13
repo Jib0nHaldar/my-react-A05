@@ -1,32 +1,19 @@
-# React + TypeScript + Vite
+1. What is JSX?
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+JSX is a syntax that allows us to write HTML-like code inside JavaScript/TypeScript. React uses JSX to describe what the UI should look like.
 
-Currently, two official plugins are available:
+2. Props vs State
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Props are data passed from a parent component to a child component. State is data managed inside a component that can change over time.
 
-## React Compiler
+3. What does useState do?
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+useState creates state in a React component. I used it to store the selected technologies in the user's stack.
 
-## Expanding the Oxlint configuration
+4. What does useEffect do?
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+useEffect runs side effects after a component renders. I used it to fetch technology data from the JSON file when the application loads.
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+5. Why does map need a key?
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+React uses the key to uniquely identify each item in a list and efficiently update the UI when the list changes.
