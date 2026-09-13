@@ -6,7 +6,6 @@ Dev Stack is a responsive React application where users can explore different te
 
 * **Explore Technologies** – Browse technologies with their category, difficulty, rating, description, icon, and badge.
 * **Build Your Own Stack** – Add technologies to your stack, remove individual items, remove all items, and prevent duplicate selections.
-* **Toast Notifications** – Get instant notifications when technologies are added, removed, or already exist in the stack.
 
 ## 🛠️ Technologies Used
 
@@ -14,7 +13,6 @@ Dev Stack is a responsive React application where users can explore different te
 * TypeScript
 * Tailwind CSS
 * Vite
-* React-Toastify
 * JSON
 
 ## 📚 React Questions & Answers
